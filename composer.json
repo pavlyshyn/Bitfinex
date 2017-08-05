@@ -1,0 +1,19 @@
+{
+    "name": "pavlyshyn/bitfinex",
+    "keywords": ["cryptocurrency","bitfinex"],
+    "description": "API Wrapper for the Bitfinex cryptocurrency exchange",
+    "authors": [
+        {
+            "name": "Roman Pavlyshyn",
+            "email": "roman@pavlyshyn.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pavlyshyn\\Bitfinex\\": "src"
+        }
+    }
+}

@@ -119,6 +119,20 @@ class Client {
     }
 
     /**
+    * Get Tickers
+    *
+    * Gives innermost bid and asks and information on the most recent trade, as
+    * well as high, low and volume of the last 24 hours.
+    */
+    public function get_tickers($symbols = 'tBTCUSD') {
+    	$request = $this->endpoint('tickers?symbols='.$symbols);
+
+    	return $this->send_public_request($request);
+    }
+
+
+
+    /**
     * Get Symbols Details
     *
     * Get a list of valid symbol IDs and the pair details.
